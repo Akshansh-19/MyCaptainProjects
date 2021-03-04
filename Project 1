@@ -1,0 +1,31 @@
+//Sizeof
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char a;
+    int x;
+    float d;
+    double t;
+    cout<<"Size of char: "<<sizeof(a)<<" byte"<<endl;
+    cout<<"Size of int: "<<sizeof(x)<<" byte"<<endl;
+    cout<<"Size of float: "<<sizeof(d)<<" byte"<<endl;
+    cout<<"Size of double: "<<sizeof(t)<<" byte"<<endl;
+    return 0;
+}
+
+
+//Arithmatic Operator
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a,b;
+    cout<<"Enter two numbers:";
+    cin>>a;
+    cin>>b;
+    cout<<"\nProduct = "<<a*b;
+    return 0;
+}
