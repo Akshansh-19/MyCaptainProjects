@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age, party;
+    cout<<"Enter age of the user: ";
+    cin>>age;
+    
+    if(age>=18)
+    {
+        cout<<"\nYou are eligible for voting"<<endl;
+        cout<<"Which party would you like to give your vote to? \n1. BJP\n2. Congress\n3. AAP\n4. NOTA"<<endl;
+        cin>>party;
+        switch (party)
+        {
+            case 1:cout<<"You voted for BJP.\nCongratulations!, your vote has been recorded";
+                    break;
+            case 2:cout<<"You voted for Congress.\nCongratulations!, your vote has been recorded";
+                    break;
+            case 3:cout<<"You voted for AAP.\nCongratulations!, your vote has been recorded";
+                    break;
+            case 4:cout<<"You chose NOTA.\nCongratulations!, your vote has been recorded";
+                    break;
+            default:cout<<"Invalid selection! Please try again.";
+        }
+    }
+    else
+    {
+        cout<<"\nYou are not eligible for voting yet. Eligible age for voting is 18+"<<endl;
+        cout<<"You will be eligible after "<<18-age<<" years";
+    }
+    return 0;
+}
