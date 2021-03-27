@@ -1,7 +1,26 @@
 #include <iostream>
 using namespace std;
 
-bool Prime(int x);
+bool Prime(int x)
+{
+    bool inputPrime = true;
+
+    if (x == 0 || x == 1) 
+    inputPrime = false;
+    
+    else 
+    {
+        for(int i = 2; i <= x/2; ++i) 
+        {
+            if(x % i == 0) 
+            {
+                inputPrime = false;
+                break;
+            }
+        }
+    }
+    return inputPrime;
+}
 
 int main() 
 {
@@ -27,25 +46,4 @@ int main()
     cout <<"The input number can't be expressed as sum of two prime numbers.";
     
     return 0;
-}
-
-bool Prime(int x)
-{
-    bool inputPrime = true;
-
-    if (x == 0 || x == 1) 
-    inputPrime = false;
-    
-    else 
-    {
-        for(int i = 2; i <= x/2; ++i) 
-        {
-            if(x % i == 0) 
-            {
-                inputPrime = false;
-                break;
-            }
-        }
-    }
-    return inputPrime;
 }
