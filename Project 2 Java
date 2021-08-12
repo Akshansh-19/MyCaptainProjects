@@ -14,7 +14,7 @@ public class Project2 {
 		double remdays=(yrs-years)*365;
 		int days = (int)remdays;
 		
-		System.out.println(mins+" minutes is approximately "+years+" years and "+days+" days");
+		System.out.println("\n"+mins+" minutes is approximately "+years+" years and "+days+" days");
 
 	}
 
