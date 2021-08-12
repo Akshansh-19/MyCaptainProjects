@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Project2 {
+
+	public static void main(String[] args) {
+		int mins;
+		System.out.println("Enter minutes: ");
+		Scanner sc= new Scanner(System.in);
+		mins= sc.nextInt();
+		System.out.println("Minutes entered: "+mins);
+		double hrs=mins/60;
+		double dys = hrs/24;
+		double yrs= dys/365;
+		int years = (int)yrs;
+		double remdays=(yrs-years)*365;
+		int days = (int)remdays;
+		
+		System.out.println(mins+" minutes is approximately "+years+" years and "+days+" days");
+
+	}
+
+}
