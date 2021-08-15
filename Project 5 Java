@@ -1,0 +1,34 @@
+
+class Employee{
+
+	private String name, address;
+	private int year;
+
+	public Employee(String n, int y, String a){
+		name=n;
+		year=y;
+		address=a;
+	}
+	
+	public String getname(){
+		return name;
+	}
+	public int getyear(){
+		return year;
+	}
+	public String getaddress(){
+		return address;
+	}
+}
+
+class Project5_Employee{
+	public static void main(String[] args){
+		Employee e1 = new Employee("Robert", 1994,"64C-WallsStreet");
+		Employee e2 = new Employee("Sam", 2000,"68D-WallsStreet");
+		Employee e3 = new Employee("John", 1999,"26B-WallsStreet");
+		System.out.println("Name\tYear of Joining\t   Address");
+		System.out.println(e1.getname()+"\t     "+e1.getyear()+"\t   "+e1.getaddress());
+		System.out.println(e2.getname()+"\t     "+e2.getyear()+"\t   "+e2.getaddress());
+		System.out.println(e3.getname()+"\t     "+e3.getyear()+"\t   "+e3.getaddress());
+	}
+}
